@@ -12,7 +12,7 @@ export const DeleteNote = ({ onDelete, eventText, onClose }) =>{
     <button onClick ={onClose} id="closeButton">Close</button>
     
   </div>
-  <div id="modalBackDrop"></div>
+  {/* <div id="modalBackDrop"></div> */}
   </>
 }
 export default DeleteNote

@@ -12,7 +12,7 @@ const AddNote = ({ onSave, onClose }) => {
         <input
           className={error ? "error" : ""}
           value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          onChange={e => setTitle(e.target.value)}
           id="eventTitleInput"
           placeholder="Event Title"
         />
@@ -30,15 +30,13 @@ const AddNote = ({ onSave, onClose }) => {
         >
           Save
         </button>
+
         <button onClick={onClose} id="cancelButton">
           Cancel
         </button>
-
-        <button id="saveButton">Save</button>
-        <button id="cancelButton">Cancel</button>
       </div>
-      <div id="modalBackDrop"></div>
     </>
+    // <div id="modalBackDrop"></div>
   );
 };
 export default AddNote;
