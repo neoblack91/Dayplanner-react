@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const AddNote = ({ onSave, onClose }) => {
-  const { title, setTitle } = useState("");
-  const { error, setError } = useState(false);
+  const [title, setTitle] = useState("");
+  const [error, setError] = useState(false);
 
   return (
     <>
@@ -10,9 +10,9 @@ const AddNote = ({ onSave, onClose }) => {
         <h2>New Event</h2>
 
         <input
-          className={error ? "error" : ""}
+          className={error ? "e" : ""}
           value={title}
-          onChange={e => setTitle(e.target.value)}
+          onChange={(e) => setTitle(e.target.value)}
           id="eventTitleInput"
           placeholder="Event Title"
         />
